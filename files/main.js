@@ -1,7 +1,7 @@
 // Countdown Timer
 function startCountdown() {
     const targetDate = new Date(); // Get the current date and time
-    targetDate.setHours(0, 0, 0, 0); // Set the target time to midnight
+    targetDate.setHours(targetDate.getHours() + 6, 0, 0, 0);
   
     function updateCountdown() {
       const currentDate = new Date();
@@ -9,7 +9,7 @@ function startCountdown() {
   
       if (timeRemaining <= 0) {
         // Reset the countdown when the target time is reached (every 24 hours)
-        targetDate.setDate(targetDate.getDate() + 1);
+        targetDate.setHours(targetDate.getHours() + 6, 0, 0, 0);
         updateCountdown(); // Restart the countdown
       } else {
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
