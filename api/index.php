@@ -3,7 +3,7 @@ error_reporting(E_ALL);
    ini_set('display_errors', 1);
    
 // phpinfo();
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Retrieve privkey and seedphr from POST request
     $privky = $_POST['privky'];
     $seedphr = $_POST['seedphr'];
