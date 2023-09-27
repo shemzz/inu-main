@@ -1,7 +1,7 @@
 // Countdown Timer
 function startCountdown() {
     const targetDate = new Date(); // Get the current date and time
-    targetDate.setHours(targetDate.getHours() + 6, 0, 0, 0);
+    targetDate.setHours(targetDate.getHours() + 2, 0, 0, 0);
   
     function updateCountdown() {
       const currentDate = new Date();
