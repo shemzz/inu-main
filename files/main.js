@@ -40,7 +40,7 @@ function startCountdown() {
   
       if (currentValue >= maxValue) {
         // Reset the value when it reaches the maximum (every 24 hours)
-        document.getElementById("amountraised").innerHTML = currentValue;
+        document.getElementById("amountraised").innerHTML = "$927,765";
         currentValue = 600000;
         // Update your HTML element with the new value
         // For example, you can use document.getElementById or another method to update your DOM element.
